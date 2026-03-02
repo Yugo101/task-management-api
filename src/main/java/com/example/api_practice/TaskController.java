@@ -1,6 +1,8 @@
 package com.example.api_practice;
 
 import org.jspecify.annotations.Nullable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -37,14 +39,16 @@ public class TaskController {
     }
 
     @PostMapping
-    public Map<String, Object> createTask(@Valid @RequestBody TaskRequest  request){
+    public ResponseEntity<Map<String, Object>> createTask(@Valid @RequestBody TaskRequest  request){
         TaskResponse task = service.createTask(request);
 
         Map<String, Object> response = new HashMap<>();
         response.put("status", "success");
         response.put("data", task);
 
-        return response;
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(response);
     }
 
     @PutMapping("/{id}")
@@ -62,7 +66,8 @@ public class TaskController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteTask(@PathVariable Long id){
+    public ResponseEntity<Void> deleteTask(@PathVariable Long id){
         service.deleteTask(id);
+        return  ResponseEntity.noContent().build();
     }
 }
