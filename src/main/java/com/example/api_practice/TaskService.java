@@ -55,6 +55,12 @@ public class TaskService {
     }
 
     public void deleteTask(Long id){
+        System.out.println("deleteTask called with id: " + id);
+        if (!taskRepository.existsById(id)){
+            System.out.println("Not found");
+           throw new RuntimeException("Task not found");
+        }
+
         taskRepository.deleteById(id);
     }
 }
