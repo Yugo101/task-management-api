@@ -1,79 +1,63 @@
 package com.example.api_practice;
 
-import org.jspecify.annotations.Nullable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 
 import com.example.api_practice.dto.TaskRequest;
 import com.example.api_practice.dto.TaskResponse;
 import jakarta.validation.Valid;
-import org.springframework.web.servlet.HandlerMapping;
 
 @RestController
 @RequestMapping("/tasks")
 public class TaskController {
 
     private final TaskService service;
-    private final HandlerMapping resourceHandlerMapping;
 
-    public TaskController(TaskService service, @Nullable HandlerMapping resourceHandlerMapping){
+    public TaskController(TaskService service){
         this.service = service;
-        this.resourceHandlerMapping = resourceHandlerMapping;
     }
 
     @GetMapping
-    public Map<String, Object> getAllTasks(){
+    public ResponseEntity<ApiResponse<List<TaskResponse>>> getAllTasks(){
         List<TaskResponse> tasks = service.getAllTasks();
 
-        Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
-        response.put("data", tasks);
-
-        return response;
+        return ResponseEntity.ok(
+                new ApiResponse<>("success", tasks)
+        );
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Map<String, Object>> getTask(@PathVariable Long id){
+    public ResponseEntity<ApiResponse<TaskResponse>> getTask(@PathVariable Long id){
         TaskResponse task = service.getTaskById(id);
 
-        Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
-        response.put("data", task);
-
-        return ResponseEntity.ok(response);
+        return ResponseEntity.ok(
+                new ApiResponse<>("success", task)
+        );
     }
 
     @PostMapping
-    public ResponseEntity<Map<String, Object>> createTask(@Valid @RequestBody TaskRequest  request){
-        TaskResponse task = service.createTask(request);
-
-        Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
-        response.put("data", task);
+    public ResponseEntity<ApiResponse<TaskResponse>> createTask(
+            @Valid @RequestBody TaskRequest  request){
+        TaskResponse created = service.createTask(request);
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(response);
+                .body(new ApiResponse<>("success", created));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Map<String, Object>> updateTask(
+    public ResponseEntity<ApiResponse<TaskResponse>> updateTask(
             @PathVariable Long id,
             @Valid @RequestBody TaskRequest request){
 
         TaskResponse updated = service.updateTask(id, request);
 
-        Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
-        response.put("data", updated);
-
-        return ResponseEntity.ok(response);
+        return ResponseEntity.ok(
+                new ApiResponse<>("success", updated)
+        );
     }
 
     @DeleteMapping("/{id}")
