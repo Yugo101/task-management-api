@@ -25,7 +25,7 @@ public class TaskController {
         List<TaskResponse> tasks = service.getAllTasks();
 
         return ResponseEntity.ok(
-                ApiResponse.success(tasks)
+                ApiResponse.success(200, "Tasks retrieved successfully", tasks)
         );
     }
 
@@ -34,7 +34,7 @@ public class TaskController {
         TaskResponse task = service.getTaskById(id);
 
         return ResponseEntity.ok(
-                ApiResponse.success(task)
+                ApiResponse.success(200, "Task retrieved successfully", task)
         );
     }
 
@@ -45,7 +45,7 @@ public class TaskController {
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(ApiResponse.success(created)
+                .body(ApiResponse.success(201, "Task created successfully", created)
                 );
     }
 
@@ -57,7 +57,7 @@ public class TaskController {
         TaskResponse updated = service.updateTask(id, request);
 
         return ResponseEntity.ok(
-               ApiResponse.success(updated)
+               ApiResponse.success(200, "Task updated successfully", updated)
         );
     }
 
