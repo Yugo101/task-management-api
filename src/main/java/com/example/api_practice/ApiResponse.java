@@ -1,22 +1,39 @@
 package com.example.api_practice;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import java.time.LocalDateTime;
+import java.util.Map;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiResponse<T> {
     private String status;
+    private int code;
     private  T data;
     private String message;
+    private Map<String, String> errors;
+    private LocalDateTime timestamp;
 
-    public ApiResponse(String status, T data, String message){
+    private ApiResponse(String status,int code, String message,
+                        T data,Map<String, String> errors){
         this.status = status;
-        this.data = data;
+        this.code = code;
         this.message = message;
+        this.data = data;
+        this.errors = errors;
+        this.timestamp =LocalDateTime.now();
     }
 
-    public static <T> ApiResponse<T> success(T data) {
-        return new ApiResponse<>("success", data, null);
+    public static <T> ApiResponse<T> success(int code, String message, T data) {
+        return new ApiResponse<>("success", code, message, data, null);
     }
 
-    public static <T> ApiResponse<T> error(String message) {
-        return new ApiResponse<>("error", null, message);
+    public static <T> ApiResponse<T> error(int code, String message) {
+        return new ApiResponse<>("error", code, message, null, null);
+    }
+
+    public static <T> ApiResponse<T> validationError(int code, String message,
+                                                    Map<String, String> errors){
+        return new ApiResponse<>("error", code, message, null, errors);
     }
 
 
@@ -30,5 +47,17 @@ public class ApiResponse<T> {
 
     public String getMessage(){
         return message;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public Map<String, String> getErrors() {
+        return errors;
+    }
+
+    public LocalDateTime getTimestamp() {
+        return timestamp;
     }
 }
