@@ -68,9 +68,11 @@ public class TaskController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteTask(@PathVariable Long id){
+    public ResponseEntity<ApiResponse<Void>> deleteTask(@PathVariable Long id){
         log.info("DELETE /tasks/{} called", id);
         service.deleteTask(id);
-        return  ResponseEntity.noContent().build();
+        return  ResponseEntity.ok(
+                ApiResponse.success(200, "Task deleted successfully", null)
+        );
     }
 }
