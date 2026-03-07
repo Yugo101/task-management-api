@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 
 @RestController
-@RequestMapping("/tasks")
+@RequestMapping("/api/v1/tasks")
 public class TaskController {
 
     private final TaskService service;

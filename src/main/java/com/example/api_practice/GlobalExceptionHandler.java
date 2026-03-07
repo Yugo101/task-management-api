@@ -33,7 +33,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(TaskNotFoundException.class)
     public ResponseEntity<ApiResponse<Object>> handleTaskNotFound(TaskNotFoundException ex){
-        log.error("Task not found: {}", ex.getMessage());
+        log.warn("Task not found: {}", ex.getMessage());
 
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)
