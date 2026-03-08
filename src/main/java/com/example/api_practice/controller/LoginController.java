@@ -4,6 +4,7 @@ import com.example.api_practice.dto.request.LoginRequest;
 import com.example.api_practice.dto.response.LoginResponse;
 import com.example.api_practice.security.JwtUtil;
 
+import jakarta.validation.Valid;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 
@@ -29,7 +30,7 @@ public class LoginController {
             description = "ユーザー名とパスワードとログインしJWTトークンを取得します"
     )
     @PostMapping("/login")
-    public LoginResponse login(@RequestBody LoginRequest request) {
+    public LoginResponse login(@Valid @RequestBody LoginRequest request) {
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.getUsername(),

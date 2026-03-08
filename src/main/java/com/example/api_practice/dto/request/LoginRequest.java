@@ -5,11 +5,11 @@ import jakarta.validation.constraints.NotBlank;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 public class LoginRequest {
-    @NotBlank
+    @NotBlank(message = "username must not be blank")
     @Schema(description = "ユーザー名", example = "test")
     private String username;
 
-    @NotBlank
+    @NotBlank(message = "password must not be blank")
     @Schema(description = "パスワード", example = "password")
     private String password;
 
