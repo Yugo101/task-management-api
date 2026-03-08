@@ -10,23 +10,30 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.validation.FieldError;
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorResponse> handleException(
-            Exception ex,
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<ErrorResponse> handleValidationException(
+            MethodArgumentNotValidException ex,
             HttpServletRequest request) {
+
+        FieldError fieldError = ex.getBindingResult()
+                .getFieldErrors()
+                .get(0);
 
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
-                HttpStatus.INTERNAL_SERVER_ERROR.value(),
-                "Internal Server Error",
-                ex.getMessage(),
+                HttpStatus.BAD_REQUEST.value(),
+                "Validation Error",
+                fieldError.getDefaultMessage(),
                 request.getRequestURI()
         );
 
         return ResponseEntity
-                .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .status(HttpStatus.BAD_REQUEST)
                 .body(error);
     }
 }
