@@ -4,18 +4,18 @@ import com.example.api_practice.dto.request.LoginRequest;
 import com.example.api_practice.dto.response.LoginResponse;
 import com.example.api_practice.security.JwtUtil;
 
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
-import org.springframework.security.authentication.*;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class AuthController {
-
+public class LoginController {
     private final AuthenticationManager authenticationManager;
     private final JwtUtil jwtUtil;
 
-    public AuthController(AuthenticationManager authenticationManager,
-                          JwtUtil jwtUtil) {
+    public LoginController(AuthenticationManager authenticationManager,
+                           JwtUtil jwtUtil) {
         this.authenticationManager = authenticationManager;
         this.jwtUtil = jwtUtil;
     }
