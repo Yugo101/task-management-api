@@ -9,6 +9,10 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 
 import org.springframework.web.bind.annotation.*;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "Authentication", description = "認証API")
 @RestController
 public class LoginController {
     private final AuthenticationManager authenticationManager;
@@ -20,6 +24,10 @@ public class LoginController {
         this.jwtUtil = jwtUtil;
     }
 
+    @Operation(
+            summary = "ユーザーログイン",
+            description = "ユーザー名とパスワードとログインしJWTトークンを取得します"
+    )
     @PostMapping("/login")
     public LoginResponse login(@RequestBody LoginRequest request) {
         authenticationManager.authenticate(

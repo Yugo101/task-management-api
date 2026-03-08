@@ -361,3 +361,30 @@ com.example.api_practice.controller.AuthController#login(LoginRequest) mapped.
 2026-03-08 17:50:22 [http-nio-8080-exec-9] [16f1bcb0-e187-4850-b8e2-64a8434f84ab] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 302 ms
 2026-03-08 17:50:22 [http-nio-8080-exec-9] [16f1bcb0-e187-4850-b8e2-64a8434f84ab] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/v3/api-docs body=
 2026-03-08 17:50:22 [http-nio-8080-exec-9] [16f1bcb0-e187-4850-b8e2-64a8434f84ab] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/v3/api-docsms body=
+2026-03-08 19:31:44 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 19:31:45 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-08 19:31:45 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-08 19:32:46 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-08 19:32:46 [main] [] INFO  c.e.a.ApiPracticeApplication - Starting ApiPracticeApplication using Java 21.0.3 with PID 19582 (/Users/yugo/Desktop/api-practice/build/classes/java/main started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-08 19:32:46 [main] [] INFO  c.e.a.ApiPracticeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-08 19:32:47 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-08 19:32:47 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2026-03-08 19:32:47 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-08 19:32:47 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-08 19:32:47 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-08 19:32:47 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-03-08 19:32:47 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-08 19:32:47 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1409 ms
+2026-03-08 19:32:48 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-08 19:32:48 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-03-08 19:32:48 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-08 19:32:48 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-08 19:32:48 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-08 19:32:48 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@105c6c9e
+2026-03-08 19:32:48 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-08 19:32:49 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-08 19:32:49 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08 19:32:49 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-08 19:32:50 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-08 19:32:50 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-08 19:32:50 [main] [] INFO  c.e.a.ApiPracticeApplication - Started ApiPracticeApplication in 5.191 seconds (process running for 5.529)
