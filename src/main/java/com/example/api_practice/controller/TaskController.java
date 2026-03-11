@@ -31,13 +31,16 @@ public class TaskController {
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
 
+        System.out.println("===== Controller: getTasks =====");
+
         Pageable pageable = PageRequest.of(page, size);
         return taskService.getTasks(pageable);
     }
 
     @GetMapping("/{id}")
-    public Optional<Task> getTaskById(@PathVariable Long id) {
-        return taskService.getTaskById(id);
+    public Task getTaskById(@PathVariable Long id) {
+        return taskService.getTaskById(id)
+                .orElseThrow(() -> new RuntimeException("Task not found"));
     }
 
     @PutMapping("/{id}")

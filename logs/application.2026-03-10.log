@@ -1,0 +1,101 @@
+2026-03-10 00:01:32 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m30s853ms).
+2026-03-10 00:20:57 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s835ms).
+2026-03-10 00:38:04 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m36s539ms).
+2026-03-10 00:55:29 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s951ms).
+2026-03-10 01:02:46 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m17s664ms).
+2026-03-10 01:19:12 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s924ms).
+2026-03-10 01:36:41 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s832ms).
+2026-03-10 01:54:06 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s43ms).
+2026-03-10 02:03:53 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m46s823ms).
+2026-03-10 02:34:49 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s929ms).
+2026-03-10 02:50:44 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s29ms).
+2026-03-10 03:04:56 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m12s74ms).
+2026-03-10 03:21:51 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s919ms).
+2026-03-10 03:39:46 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s953ms).
+2026-03-10 03:57:11 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s945ms).
+2026-03-10 05:34:22 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s657ms).
+2026-03-10 05:56:35 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m13s199ms).
+2026-03-10 06:42:14 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m39s419ms).
+2026-03-10 06:46:24 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10 06:46:24 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-10 06:46:24 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-10 06:46:38 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-10 06:46:38 [main] [] INFO  c.e.a.ApiPracticeApplication - Starting ApiPracticeApplication using Java 21.0.3 with PID 40177 (/Users/yugo/Desktop/api-practice/build/classes/java/main started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-10 06:46:38 [main] [] INFO  c.e.a.ApiPracticeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-10 06:46:38 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-10 06:46:38 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2026-03-10 06:46:39 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-10 06:46:39 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-10 06:46:39 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-10 06:46:39 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-03-10 06:46:39 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-10 06:46:39 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1033 ms
+2026-03-10 06:46:39 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-10 06:46:39 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-03-10 06:46:39 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-10 06:46:39 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-10 06:46:39 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-10 06:46:40 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5366575d
+2026-03-10 06:46:40 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-10 06:46:40 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-10 06:46:41 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10 06:46:41 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-10 06:46:41 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-10 06:46:41 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-10 06:46:41 [main] [] INFO  c.e.a.ApiPracticeApplication - Started ApiPracticeApplication in 4.248 seconds (process running for 4.641)
+2026-03-10 06:46:53 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-10 06:46:53 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-10 06:46:53 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-03-10 06:46:53 [http-nio-8080-exec-1] [fce1d4e8-56f4-4154-9323-d38c5edae351] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/swagger-ui/index.html body=
+2026-03-10 06:46:53 [http-nio-8080-exec-1] [fce1d4e8-56f4-4154-9323-d38c5edae351] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/swagger-ui/index.htmlms body=
+2026-03-10 06:46:54 [http-nio-8080-exec-3] [a513f23d-99bf-4383-a3d6-990e2bfa8b64] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/swagger-ui/index.css body=
+2026-03-10 06:46:54 [http-nio-8080-exec-3] [a513f23d-99bf-4383-a3d6-990e2bfa8b64] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/swagger-ui/index.cssms body=
+2026-03-10 06:46:54 [http-nio-8080-exec-2] [cc98c571-07dd-4c54-8b5e-66b6f66199eb] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/swagger-ui/swagger-ui.css body=
+2026-03-10 06:46:54 [http-nio-8080-exec-2] [cc98c571-07dd-4c54-8b5e-66b6f66199eb] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/swagger-ui/swagger-ui.cssms body=
+2026-03-10 06:46:54 [http-nio-8080-exec-5] [fe2bd93a-16b6-4b3c-af46-fe74b8da1e18] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/swagger-ui/swagger-ui-standalone-preset.js body=
+2026-03-10 06:46:54 [http-nio-8080-exec-5] [fe2bd93a-16b6-4b3c-af46-fe74b8da1e18] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/swagger-ui/swagger-ui-standalone-preset.jsms body=
+2026-03-10 06:46:54 [http-nio-8080-exec-4] [89a19ede-ac63-4569-b71b-5e9ecae85c78] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/swagger-ui/swagger-ui-bundle.js body=
+2026-03-10 06:46:54 [http-nio-8080-exec-4] [89a19ede-ac63-4569-b71b-5e9ecae85c78] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/swagger-ui/swagger-ui-bundle.jsms body=
+2026-03-10 06:46:54 [http-nio-8080-exec-6] [11297d37-8c12-4dd0-85ad-8c205d00a6a1] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/swagger-ui/swagger-initializer.js body=
+2026-03-10 06:46:54 [http-nio-8080-exec-6] [11297d37-8c12-4dd0-85ad-8c205d00a6a1] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/swagger-ui/swagger-initializer.jsms body=
+2026-03-10 06:46:54 [http-nio-8080-exec-8] [64a3e13c-dffa-4934-acf4-033e9f025911] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/swagger-ui/favicon-32x32.png body=
+2026-03-10 06:46:54 [http-nio-8080-exec-8] [64a3e13c-dffa-4934-acf4-033e9f025911] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/swagger-ui/favicon-32x32.pngms body=
+2026-03-10 06:46:54 [http-nio-8080-exec-7] [1de4f25a-fa4d-4cd7-83d9-0f8ff21eaf9d] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/v3/api-docs/swagger-config body=
+2026-03-10 06:46:54 [http-nio-8080-exec-7] [1de4f25a-fa4d-4cd7-83d9-0f8ff21eaf9d] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/v3/api-docs/swagger-configms body=
+2026-03-10 06:46:54 [http-nio-8080-exec-9] [f048f37b-337b-4c8e-a080-08bb7ef8199b] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 318 ms
+2026-03-10 06:46:54 [http-nio-8080-exec-9] [f048f37b-337b-4c8e-a080-08bb7ef8199b] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/v3/api-docs body=
+2026-03-10 06:46:54 [http-nio-8080-exec-9] [f048f37b-337b-4c8e-a080-08bb7ef8199b] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/v3/api-docsms body=
+2026-03-10 06:47:10 [http-nio-8080-exec-4] [f53dc900-561a-42fa-955e-87e88565d6e5] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-10 06:47:10 [http-nio-8080-exec-4] [f53dc900-561a-42fa-955e-87e88565d6e5] INFO  c.e.a.f.RequestResponseLoggingFilter - API REQUEST method=GET uri=/tasks body=
+2026-03-10 06:47:10 [http-nio-8080-exec-4] [f53dc900-561a-42fa-955e-87e88565d6e5] INFO  c.e.a.f.RequestResponseLoggingFilter - API RESPONSE status=200 duration=/tasksms body=
+2026-03-10 08:14:08 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-10 08:14:08 [main] [] INFO  c.e.a.ApiPracticeApplication - Starting ApiPracticeApplication using Java 21.0.3 with PID 41796 (/Users/yugo/Desktop/api-practice/build/classes/java/main started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-10 08:14:08 [main] [] INFO  c.e.a.ApiPracticeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-10 08:14:09 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-10 08:14:09 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2026-03-10 08:14:09 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-10 08:14:09 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-10 08:14:09 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-10 08:14:09 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-03-10 08:14:09 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-10 08:14:09 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1067 ms
+2026-03-10 08:14:09 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-10 08:14:09 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-03-10 08:14:09 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-10 08:14:09 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-10 08:14:09 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-10 08:14:10 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@105c6c9e
+2026-03-10 08:14:10 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-10 08:14:11 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-10 08:14:11 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10 08:14:11 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-10 08:14:11 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-10 08:14:11 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-10 08:14:11 [main] [] INFO  c.e.a.ApiPracticeApplication - Started ApiPracticeApplication in 3.686 seconds (process running for 4.055)
+2026-03-10 11:35:40 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h1m59s993ms).
+2026-03-10 14:38:42 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h3m1s635ms).
+2026-03-10 16:26:23 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h47m41s684ms).
+2026-03-10 18:36:43 [HikariPool-1 housekeeper] [] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h10m18s939ms).

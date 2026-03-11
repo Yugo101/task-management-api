@@ -21,6 +21,7 @@ public class TaskService {
     }
 
     public Page<Task> getTasks(Pageable pageable) {
+        System.out.println("===== Service: getTasks =====");
         return taskRepository.findAll(pageable);
     }
 
