@@ -1,5 +1,6 @@
 package com.example.api_practice.service;
 
+import com.example.api_practice.dto.request.TaskRequest;
 import com.example.api_practice.entity.Task;
 import com.example.api_practice.repository.TaskRepository;
 import org.springframework.data.domain.Page;
@@ -16,7 +17,12 @@ public class TaskService {
         this.taskRepository = taskRepository;
     }
 
-    public Task createTask(Task task) {
+    public Task createTask(TaskRequest request) {
+        Task task = new Task();
+        task.setTitle(request.getTitle());
+        task.setDescription(request.getDescription());
+        task.setCompleted(request.isCompleted());
+
         return taskRepository.save(task);
     }
 

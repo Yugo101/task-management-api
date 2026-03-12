@@ -1,8 +1,10 @@
 package com.example.api_practice.controller;
 
+import com.example.api_practice.dto.request.TaskRequest;
 import com.example.api_practice.entity.Task;
 import com.example.api_practice.service.TaskService;
 
+import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -22,8 +24,9 @@ public class TaskController {
     }
 
     @PostMapping
-    public Task createTask(@RequestBody Task task) {
-        return taskService.createTask(task);
+    public Task createTask(
+            @Valid @RequestBody TaskRequest request) {
+        return taskService.createTask(request);
     }
 
     @GetMapping

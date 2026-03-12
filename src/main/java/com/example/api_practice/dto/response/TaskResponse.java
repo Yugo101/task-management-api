@@ -1,4 +1,4 @@
-package com.example.api_practice.dto;
+package com.example.api_practice.dto.response;
 
 public class TaskResponse {
     private Long id;
