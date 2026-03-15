@@ -1,4 +1,4 @@
-package com.example.api_practice;
+package com.example.api_practice.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package com.example.api_practice;
+package com.example.api_practice.dto.response;
 
 import java.time.LocalDateTime;
 

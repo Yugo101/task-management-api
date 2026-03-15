@@ -1,5 +1,6 @@
-package com.example.api_practice;
+package com.example.api_practice.service;
 
+import com.example.api_practice.dto.response.HelloResponse;
 import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 
