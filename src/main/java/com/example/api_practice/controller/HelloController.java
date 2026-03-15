@@ -1,7 +1,7 @@
 package com.example.api_practice.controller;
 
-import com.example.api_practice.HelloResponse;
-import com.example.api_practice.HelloService;
+import com.example.api_practice.dto.response.HelloResponse;
+import com.example.api_practice.service.HelloService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
