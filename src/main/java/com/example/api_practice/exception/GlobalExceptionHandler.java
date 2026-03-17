@@ -13,8 +13,14 @@ import java.time.LocalDateTime;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.validation.FieldError;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+    private static final Logger logger =
+            LoggerFactory.getLogger(GlobalExceptionHandler.class);
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ErrorResponse> handleValidationException(
             MethodArgumentNotValidException ex,
@@ -23,6 +29,8 @@ public class GlobalExceptionHandler {
         FieldError fieldError = ex.getBindingResult()
                 .getFieldErrors()
                 .get(0);
+
+        logger.warn("Validation error: {}", fieldError.getDefaultMessage());
 
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
@@ -41,6 +49,8 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleRuntimeException(
             RuntimeException ex,
             HttpServletRequest request) {
+        logger.error("Runtime exception occurred: {}", ex.getMessage());
+
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
                 HttpStatus.NOT_FOUND.value(),
