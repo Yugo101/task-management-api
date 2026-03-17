@@ -27,7 +27,7 @@ public class RequestResponseLoggingFilter extends OncePerRequestFilter{
             HttpServletResponse response,
             FilterChain filterChain
     ) throws ServletException, IOException {
-        log.info("**** NEW FILTER ACTIVE ****");
+        log.debug("**** NEW FILTER ACTIVE ****");
 
         ContentCachingRequestWrapper requestWrapper =
                 new ContentCachingRequestWrapper(request, 1024 * 1024);
@@ -52,6 +52,16 @@ public class RequestResponseLoggingFilter extends OncePerRequestFilter{
                     StandardCharsets.UTF_8
             );
 
+            int responseSize = responseWrapper.getContentAsByteArray().length;
+
+            if (requestBody.length() > 500) {
+                requestBody = requestBody.substring(0,500) + "...";
+            }
+
+            if (responseBody.length() > 500) {
+                responseBody = responseBody.substring(0, 500) + "...";
+            }
+
             log.info(
                     "API REQUEST method={} uri={} body={}",
                     request.getMethod(),
@@ -60,11 +70,12 @@ public class RequestResponseLoggingFilter extends OncePerRequestFilter{
             );
 
             log.info(
-                    "API RESPONSE method={} uri={} status={} duration={}ms body={}",
+                    "API RESPONSE method={} uri={} status={} duration={}ms size={} body={}",
                     request.getMethod(),
                     request.getRequestURI(),
                     response.getStatus(),
                     duration,
+                    responseSize,
                     responseBody
             );
 

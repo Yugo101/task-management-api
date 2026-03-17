@@ -5,6 +5,7 @@ import com.example.api_practice.dto.response.TaskResponse;
 import com.example.api_practice.service.TaskService;
 
 import jakarta.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -31,9 +32,6 @@ public class TaskController {
     public Page<TaskResponse> getTasks(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
-
-        System.out.println("===== Controller: getTasks =====");
-
         Pageable pageable = PageRequest.of(page, size);
         return taskService.getTasks(pageable);
     }
@@ -46,7 +44,7 @@ public class TaskController {
     @PutMapping("/{id}")
     public TaskResponse updateTask(
             @PathVariable Long id,
-            @RequestBody TaskRequest request) {
+            @Valid @RequestBody TaskRequest request) {
         return taskService.updateTask(id, request);
     }
 
