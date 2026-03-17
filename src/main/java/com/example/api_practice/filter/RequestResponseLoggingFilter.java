@@ -11,7 +11,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.ContentCachingRequestWrapper;
-import org.springframework.web.util.ContentCachingRequestWrapper;
 import org.springframework.web.util.ContentCachingResponseWrapper;
 
 import java.io.IOException;
@@ -28,6 +27,8 @@ public class RequestResponseLoggingFilter extends OncePerRequestFilter{
             HttpServletResponse response,
             FilterChain filterChain
     ) throws ServletException, IOException {
+        log.info("**** NEW FILTER ACTIVE ****");
+
         ContentCachingRequestWrapper requestWrapper =
                 new ContentCachingRequestWrapper(request, 1024 * 1024);
 
@@ -36,36 +37,38 @@ public class RequestResponseLoggingFilter extends OncePerRequestFilter{
 
         long start = System.currentTimeMillis();
 
-        filterChain.doFilter(requestWrapper, responseWrapper);
+        try {
+            filterChain.doFilter(requestWrapper, responseWrapper);
+        } finally {
+            long duration = System.currentTimeMillis() - start;
 
-        long duration = System.currentTimeMillis() - start;
+            String requestBody = new String(
+                    requestWrapper.getContentAsByteArray(),
+                    StandardCharsets.UTF_8
+            );
 
-        String requestBody = new String(
-                requestWrapper.getContentAsByteArray(),
-                StandardCharsets.UTF_8
-        );
+            String responseBody = new String(
+                    responseWrapper.getContentAsByteArray(),
+                    StandardCharsets.UTF_8
+            );
 
-        String responseBody = new String(
-                responseWrapper.getContentAsByteArray(),
-                StandardCharsets.UTF_8
-        );
+            log.info(
+                    "API REQUEST method={} uri={} body={}",
+                    request.getMethod(),
+                    request.getRequestURI(),
+                    requestBody
+            );
 
-        log.info(
-                "API REQUEST method={} uri={} body={}",
-                request.getMethod(),
-                request.getRequestURI(),
-                requestBody
-        );
+            log.info(
+                    "API RESPONSE method={} uri={} status={} duration={}ms body={}",
+                    request.getMethod(),
+                    request.getRequestURI(),
+                    response.getStatus(),
+                    duration,
+                    responseBody
+            );
 
-        log.info(
-                "API RESPONSE status={} duration={}ms body={}",
-                response.getStatus(),
-                request.getRequestURI(),
-                requestBody
-        );
-
-        responseWrapper.copyBodyToResponse();
+            responseWrapper.copyBodyToResponse();
+        }
     }
-
-
 }

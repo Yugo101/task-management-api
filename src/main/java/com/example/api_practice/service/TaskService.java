@@ -9,24 +9,35 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Optional;
 
 @Service
 public class TaskService {
     private final TaskRepository taskRepository;
+    private static final Logger logger =
+        LoggerFactory.getLogger(TaskService.class);
 
     public TaskService(TaskRepository taskRepository){
         this.taskRepository = taskRepository;
     }
 
     public TaskResponse createTask(TaskRequest request) {
+        logger.info("Creating new task: {}", request.getTitle());
+
         Task task = TaskMapper.toEntity(request);
         Task savedTask = taskRepository.save(task);
+
+        logger.info("Task created with id: {}", savedTask.getId());
 
         return TaskMapper.toResponse(savedTask);
     }
 
     public Page<TaskResponse> getTasks(Pageable pageable) {
+        logger.info("Fetching tasks page: {}", pageable.getPageNumber());
+
         return taskRepository.findAll(pageable)
                 .map(TaskMapper::toResponse);
     }
@@ -39,6 +50,8 @@ public class TaskService {
     }
 
     public TaskResponse updateTask(Long id, TaskRequest request) {
+        logger.info("Updating task with id: {}", id);
+
         Task task = taskRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Task not found"));
 
@@ -52,6 +65,8 @@ public class TaskService {
     }
 
     public void deleteTask(Long id) {
+        logger.info("Deleting task with id: {}", id);
+
         taskRepository.deleteById(id);
     }
 }
