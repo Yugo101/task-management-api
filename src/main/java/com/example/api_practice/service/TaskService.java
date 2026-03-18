@@ -3,6 +3,7 @@ package com.example.api_practice.service;
 import com.example.api_practice.dto.request.TaskRequest;
 import com.example.api_practice.dto.response.TaskResponse;
 import com.example.api_practice.entity.Task;
+import com.example.api_practice.exception.ResourceNotFoundException;
 import com.example.api_practice.mapper.TaskMapper;
 import com.example.api_practice.repository.TaskRepository;
 
@@ -42,10 +43,8 @@ public class TaskService {
     }
 
     public TaskResponse getTaskById(Long id) {
-        logger.info("Fetching task with id: {}", id);
-
         Task task = taskRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Task not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Task not found"));
 
         return TaskMapper.toResponse(task);
     }
@@ -54,7 +53,7 @@ public class TaskService {
         logger.info("Updating task with id: {}", id);
 
         Task task = taskRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Task not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Task not found"));
 
         task.setTitle(request.getTitle());
         task.setDescription(request.getDescription());
@@ -62,20 +61,15 @@ public class TaskService {
 
         Task updated = taskRepository.save(task);
 
-        logger.info("Task updated with id: {}", updated.getId());
-
         return TaskMapper.toResponse(updated);
     }
 
     public void deleteTask(Long id) {
         logger.info("Deleting task with id: {}", id);
 
-        if (!taskRepository.existsById(id)) {
-            throw new RuntimeException("Task not found");
-        }
+        Task task = taskRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Task not found"));
 
-        taskRepository.deleteById(id);
-
-        logger.info("Task deleted with id: {}", id);
+        taskRepository.delete(task);
     }
 }
