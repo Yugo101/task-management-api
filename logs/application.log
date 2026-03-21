@@ -58,3 +58,32 @@ This generated password is for development use only. Your security configuration
 	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
 	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
 
+2026-03-21 18:50:37 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-21 18:50:37 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Starting TaskControllerTest using Java 21.0.3 with PID 65591 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-21 18:50:37 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-21 18:50:39 [Test worker] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6d914ea6-8fa1-4ba0-863b-8c10a46cdba7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-21 18:50:39 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-21 18:50:39 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-21 18:50:39 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-21 18:50:39 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-03-21 18:50:39 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Started TaskControllerTest in 2.054 seconds (process running for 2.995)
+2026-03-21 18:50:39 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-21 18:50:39 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-21 18:50:40 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-21 18:50:40 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-21 18:50:40 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-21 18:50:40 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-21 18:50:40 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Updating task with id: 1
+2026-03-21 18:50:40 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test
+2026-03-21 18:50:40 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-21 18:50:40 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-21 18:50:40 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-21 18:50:40 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
