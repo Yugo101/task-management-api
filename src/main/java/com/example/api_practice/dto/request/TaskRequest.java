@@ -8,7 +8,7 @@ public class TaskRequest {
     @Size(max = 100, message = "タイトルは100文字以内です")
     private String title;
 
-    @Size(max = 500, message = "discriptionは500文字以内です")
+    @Size(max = 500, message = "descriptionは500文字以内です")
     private String description;
 
     private boolean completed;
@@ -23,5 +23,17 @@ public class TaskRequest {
 
     public boolean isCompleted(){
         return completed;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 }
