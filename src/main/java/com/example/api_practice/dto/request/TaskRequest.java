@@ -1,5 +1,6 @@
 package com.example.api_practice.dto.request;
 
+import com.example.api_practice.entity.Task;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
@@ -12,6 +13,13 @@ public class TaskRequest {
     private String description;
 
     private boolean completed;
+
+    public TaskRequest(String title, String description, boolean completed) {
+        this.title = title;
+        this.description = description;
+        this.completed = completed;
+    }
+    public TaskRequest() {}
 
     public String getTitle() {
         return title;
