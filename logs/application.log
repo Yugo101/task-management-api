@@ -69,3 +69,321 @@ This generated password is for development use only. Your security configuration
 2026-03-23 06:48:58 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-03-23 06:48:58 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2026-03-23 06:48:58 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:29:02 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-23 07:29:02 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Starting TaskControllerTest using Java 21.0.10 with PID 99505 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:29:02 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-23 07:29:11 [Test worker] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 998871ac-62f4-4515-9b63-97d906dd6ec4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-23 07:29:11 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-23 07:29:12 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-23 07:29:12 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-23 07:29:12 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-03-23 07:29:12 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Started TaskControllerTest in 11.162 seconds (process running for 14.207)
+2026-03-23 07:29:13 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 07:29:13 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 07:29:13 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:29:13 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:29:13 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:29:13 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23 07:29:13 [Test worker] [] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.api_practice.integration.TaskIntegrationTest]: TaskIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-23 07:29:13 [Test worker] [] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.api_practice.ApiPracticeApplication for test class com.example.api_practice.integration.TaskIntegrationTest
+2026-03-23 07:29:14 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - Starting TaskIntegrationTest using Java 21.0.10 with PID 99505 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:29:14 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - The following 1 profile is active: "test"
+2026-03-23 07:29:15 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23 07:29:15 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interface.
+2026-03-23 07:29:16 [Test worker] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23 07:29:16 [Test worker] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-03-23 07:29:16 [Test worker] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-23 07:29:16 [Test worker] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23 07:29:16 [Test worker] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-23 07:29:16 [Test worker] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2026-03-23 07:29:16 [Test worker] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-23 07:29:17 [Test worker] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-23 07:29:18 [Test worker] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23 07:29:18 [Test worker] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:29:18 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-23 07:29:19 [Test worker] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23 07:29:20 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-23 07:29:20 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-23 07:29:20 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-03-23 07:29:21 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - Started TaskIntegrationTest in 7.13 seconds (process running for 22.488)
+2026-03-23 07:29:21 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test Task
+2026-03-23 07:29:21 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-23 07:29:21 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test Task
+2026-03-23 07:29:21 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 2
+2026-03-23 07:29:21 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
+2026-03-23 07:29:21 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23 07:29:21 [Test worker] [] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.api_practice.repository.TaskRepositoryTest]: TaskRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-23 07:29:21 [Test worker] [] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.api_practice.ApiPracticeApplication for test class com.example.api_practice.repository.TaskRepositoryTest
+2026-03-23 07:29:21 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - Starting TaskRepositoryTest using Java 21.0.10 with PID 99505 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:29:21 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-23 07:29:22 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23 07:29:22 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interface.
+2026-03-23 07:29:22 [Test worker] [] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2026-03-23 07:29:22 [Test worker] [] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:144c414a-1716-47ac-81f1-5de1692757b2;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-23 07:29:23 [Test worker] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23 07:29:23 [Test worker] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-23 07:29:23 [Test worker] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23 07:29:23 [Test worker] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23 07:29:23 [Test worker] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:29:23 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - Started TaskRepositoryTest in 1.767 seconds (process running for 24.895)
+2026-03-23 07:29:24 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Updating task with id: 1
+2026-03-23 07:29:24 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test
+2026-03-23 07:29:24 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-23 07:29:24 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-23 07:29:24 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-23 07:29:24 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
+2026-03-23 07:29:24 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:29:24 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-23 07:29:24 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-23 07:29:24 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:41:10 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-23 07:41:10 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - Starting TaskIntegrationTest using Java 21.0.10 with PID 99685 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:41:10 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - The following 1 profile is active: "test"
+2026-03-23 07:41:13 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23 07:41:13 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interface.
+2026-03-23 07:41:18 [Test worker] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23 07:41:18 [Test worker] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-03-23 07:41:18 [Test worker] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-23 07:41:18 [Test worker] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23 07:41:18 [Test worker] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-23 07:41:18 [Test worker] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2026-03-23 07:41:18 [Test worker] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-23 07:41:18 [Test worker] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-23 07:41:20 [Test worker] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23 07:41:20 [Test worker] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:41:20 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-23 07:41:21 [Test worker] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23 07:41:23 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-23 07:41:23 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-23 07:41:23 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-03-23 07:41:24 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - Started TaskIntegrationTest in 14.193 seconds (process running for 17.159)
+2026-03-23 07:41:24 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test Task
+2026-03-23 07:41:24 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-23 07:41:25 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test Task
+2026-03-23 07:41:25 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 2
+2026-03-23 07:41:25 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
+2026-03-23 07:41:25 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23 07:41:25 [Test worker] [] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.api_practice.controller.TaskControllerTest]: TaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-23 07:41:25 [Test worker] [] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.api_practice.ApiPracticeApplication for test class com.example.api_practice.controller.TaskControllerTest
+2026-03-23 07:41:25 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Starting TaskControllerTest using Java 21.0.10 with PID 99685 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:41:25 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-23 07:41:27 [Test worker] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e81b8e0b-4fc4-4ab9-b12d-eebd9c2f90ec
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-23 07:41:27 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-23 07:41:27 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-23 07:41:27 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-23 07:41:27 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-03-23 07:41:27 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Started TaskControllerTest in 2.171 seconds (process running for 20.862)
+2026-03-23 07:41:28 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 07:41:28 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 07:41:28 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:41:28 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:41:28 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:41:28 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23 07:41:28 [Test worker] [] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.api_practice.repository.TaskRepositoryTest]: TaskRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-23 07:41:28 [Test worker] [] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.api_practice.ApiPracticeApplication for test class com.example.api_practice.repository.TaskRepositoryTest
+2026-03-23 07:41:28 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - Starting TaskRepositoryTest using Java 21.0.10 with PID 99685 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:41:28 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-23 07:41:29 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23 07:41:29 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2026-03-23 07:41:29 [Test worker] [] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2026-03-23 07:41:29 [Test worker] [] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:a397ca52-849e-4ab0-ae5e-55a739732d19;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-23 07:41:29 [Test worker] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23 07:41:29 [Test worker] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-23 07:41:29 [Test worker] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23 07:41:29 [Test worker] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23 07:41:30 [Test worker] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:41:30 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - Started TaskRepositoryTest in 1.879 seconds (process running for 23.372)
+2026-03-23 07:41:30 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Updating task with id: 1
+2026-03-23 07:41:30 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test
+2026-03-23 07:41:30 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-23 07:41:30 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-23 07:41:30 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-23 07:41:30 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
+2026-03-23 07:41:31 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:41:31 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-23 07:41:31 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-23 07:41:31 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:57:55 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-23 07:57:56 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Starting TaskControllerTest using Java 21.0.10 with PID 119 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:57:56 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-23 07:58:02 [Test worker] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e9f5efd3-6277-4960-bca5-27278a03ce1e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-23 07:58:02 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-23 07:58:03 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-23 07:58:03 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-23 07:58:03 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-03-23 07:58:03 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Started TaskControllerTest in 8.092 seconds (process running for 11.32)
+2026-03-23 07:58:03 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 07:58:03 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 07:58:04 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:58:04 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:58:04 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:58:04 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23 07:58:04 [Test worker] [] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.api_practice.integration.TaskIntegrationTest]: TaskIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-23 07:58:04 [Test worker] [] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.api_practice.ApiPracticeApplication for test class com.example.api_practice.integration.TaskIntegrationTest
+2026-03-23 07:58:04 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - Starting TaskIntegrationTest using Java 21.0.10 with PID 119 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:58:04 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - The following 1 profile is active: "test"
+2026-03-23 07:58:05 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23 07:58:05 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2026-03-23 07:58:06 [Test worker] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23 07:58:06 [Test worker] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-03-23 07:58:06 [Test worker] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-23 07:58:07 [Test worker] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23 07:58:07 [Test worker] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-23 07:58:07 [Test worker] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2026-03-23 07:58:07 [Test worker] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-23 07:58:07 [Test worker] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-23 07:58:08 [Test worker] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23 07:58:08 [Test worker] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:58:09 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-23 07:58:10 [Test worker] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23 07:58:11 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-23 07:58:11 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-23 07:58:11 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-03-23 07:58:11 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - Started TaskIntegrationTest in 7.305 seconds (process running for 19.755)
+2026-03-23 07:58:11 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 07:58:11 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 07:58:11 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test Task
+2026-03-23 07:58:12 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-23 07:58:12 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test Task
+2026-03-23 07:58:12 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 2
+2026-03-23 07:58:12 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
+2026-03-23 07:58:12 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23 07:58:12 [Test worker] [] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.api_practice.repository.TaskRepositoryTest]: TaskRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-23 07:58:12 [Test worker] [] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.api_practice.ApiPracticeApplication for test class com.example.api_practice.repository.TaskRepositoryTest
+2026-03-23 07:58:12 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - Starting TaskRepositoryTest using Java 21.0.10 with PID 119 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 07:58:12 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-23 07:58:13 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23 07:58:13 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2026-03-23 07:58:13 [Test worker] [] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2026-03-23 07:58:13 [Test worker] [] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:3bf547c9-c91d-463a-bb73-41ef3fd2f2d3;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-23 07:58:13 [Test worker] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23 07:58:13 [Test worker] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-23 07:58:13 [Test worker] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23 07:58:13 [Test worker] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23 07:58:13 [Test worker] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:58:14 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - Started TaskRepositoryTest in 1.748 seconds (process running for 22.118)
+2026-03-23 07:58:14 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Updating task with id: 1
+2026-03-23 07:58:14 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test
+2026-03-23 07:58:14 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-23 07:58:14 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-23 07:58:14 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-23 07:58:14 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
+2026-03-23 07:58:14 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 07:58:14 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-23 07:58:14 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-23 07:58:14 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 08:10:10 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-23 08:10:11 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Starting TaskControllerTest using Java 21.0.10 with PID 303 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 08:10:11 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-23 08:10:17 [Test worker] [] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 78ce6e28-9045-419f-a3ee-2f32e99b76a1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-23 08:10:17 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-23 08:10:18 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-23 08:10:18 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-23 08:10:18 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 6 ms
+2026-03-23 08:10:18 [Test worker] [] INFO  c.e.a.controller.TaskControllerTest - Started TaskControllerTest in 8.086 seconds (process running for 11.18)
+2026-03-23 08:10:18 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 08:10:18 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 08:10:18 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 08:10:19 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 08:10:19 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 08:10:19 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23 08:10:19 [Test worker] [] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.api_practice.integration.TaskIntegrationTest]: TaskIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-23 08:10:19 [Test worker] [] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.api_practice.ApiPracticeApplication for test class com.example.api_practice.integration.TaskIntegrationTest
+2026-03-23 08:10:19 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - Starting TaskIntegrationTest using Java 21.0.10 with PID 303 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 08:10:19 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - The following 1 profile is active: "test"
+2026-03-23 08:10:21 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23 08:10:21 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2026-03-23 08:10:22 [Test worker] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23 08:10:22 [Test worker] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-03-23 08:10:22 [Test worker] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-23 08:10:23 [Test worker] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23 08:10:23 [Test worker] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-23 08:10:23 [Test worker] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2026-03-23 08:10:23 [Test worker] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-23 08:10:23 [Test worker] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-23 08:10:25 [Test worker] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23 08:10:25 [Test worker] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 08:10:25 [Test worker] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-23 08:10:26 [Test worker] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23 08:10:27 [Test worker] [] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-23 08:10:27 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-23 08:10:27 [Test worker] [] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.a.i.TaskIntegrationTest - Started TaskIntegrationTest in 8.642 seconds (process running for 20.977)
+2026-03-23 08:10:28 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 08:10:28 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Validation error: タイトルは必須です
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test Task
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 9999
+2026-03-23 08:10:28 [Test worker] [] WARN  c.e.a.e.GlobalExceptionHandler - Resource not found: Task not found
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test Task
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 2
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
+2026-03-23 08:10:28 [Test worker] [] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-23 08:10:28 [Test worker] [] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.api_practice.repository.TaskRepositoryTest]: TaskRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-23 08:10:28 [Test worker] [] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.api_practice.ApiPracticeApplication for test class com.example.api_practice.repository.TaskRepositoryTest
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - Starting TaskRepositoryTest using Java 21.0.10 with PID 303 (started by yugo in /Users/yugo/Desktop/api-practice)
+2026-03-23 08:10:28 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-23 08:10:29 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23 08:10:29 [Test worker] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2026-03-23 08:10:29 [Test worker] [] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2026-03-23 08:10:29 [Test worker] [] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:bcd6b582-83e6-4bfc-a64a-63d760291eda;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-23 08:10:29 [Test worker] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23 08:10:29 [Test worker] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-23 08:10:29 [Test worker] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23 08:10:29 [Test worker] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23 08:10:29 [Test worker] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 08:10:29 [Test worker] [] INFO  c.e.a.repository.TaskRepositoryTest - Started TaskRepositoryTest in 0.972 seconds (process running for 22.761)
+2026-03-23 08:10:30 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Updating task with id: 1
+2026-03-23 08:10:31 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Creating new task: Test
+2026-03-23 08:10:31 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Task created with id: 1
+2026-03-23 08:10:31 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-23 08:10:31 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Deleting task with id: 1
+2026-03-23 08:10:31 [Test worker] [] INFO  c.e.api_practice.service.TaskService - Fetching tasks page: 0
+2026-03-23 08:10:31 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23 08:10:31 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-23 08:10:31 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-23 08:10:31 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
